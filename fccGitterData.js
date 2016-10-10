@@ -20,6 +20,11 @@ function makeOptions(beforeId) {
   };
   return options;
 };
+
+var beforeId = null;
+var messages = [];
+
+function makeRequest() {
   
     request(makeOptions(beforeId), function(err, res, body) {
     if (err){
